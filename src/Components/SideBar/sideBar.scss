@@ -1,0 +1,67 @@
+.SideBar {
+  position: fixed;
+  width: 300px;
+  top: 0;
+  background-color: white;
+  min-height: 100vh;
+  z-index: 100;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a.active {
+    .item {
+        background-color: #00BDAE;
+        color: white;
+        border: 1px solid transparent !important;
+    }
+  }
+  a:hover {
+    color: inherit;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      h3 {
+        font-size: 27px;
+        font-weight: 500;
+      }
+    }
+    .close {
+      cursor: pointer;
+    }
+  }
+  .body {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .name {
+        color: gray;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        padding:15px 20px;
+        border-radius: 7px;
+        font-size: 18px;
+        gap: 10px;
+        .icon{
+            font-size: 20px;
+        }
+      }
+    }
+  }
+}
