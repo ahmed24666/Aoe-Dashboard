@@ -20,7 +20,6 @@ function App() {
     const handleShow = () => setShowSide(true);
     const [isLoader, setIsLoader] = useState(true)
     useEffect(() => {
-      setIsLoader(true)
       setTimeout(() => {
         setIsLoader(false)
       }, 3000);
